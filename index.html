@@ -4,41 +4,31 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
-  <link rel="stylesheet" href="sytles.css">
+   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <div class="quiz-container">
-       <h1></h1>
-       <p id="question1">PIM ย่อมาจากอะไร ?</p>
-       <button class="button" onclick="checkAnswer('a')">A) พีไอเอ็ม</button>
-       <button class="button" onclick="checkAnswer('b')">B) ปิ๋ม</button>
-       <button class="button" onclick="checkAnswer('c')">C) พิม</button>
-       <button class="button" onclick="checkAnswer('d')">D) ภีม</button>
-       <p id="result"></p>
-
-       <h1></h1>
-       <p id="question2">RAM ย่อมาจากอะไร ?</p>
-       <button class="button" onclick="checkAnswer1('a')">A) Read Access Memory</button>
-       <button class="button" onclick="checkAnswer1('b')">B) Rand Access Memory</button>
-       <button class="button" onclick="checkAnswer1('c')">C) Random Access Memory</button>
-       <button class="button" onclick="checkAnswer1('d')">D) Random Acces Memory</button>
-       <p id="result1"></p>
-
-       <h1></h1>
-       <p id="question3">Website โรงเรียน อบจ.สฎ.๑ (ดอนสักผดุงวิทย์) คือ ?</p>
-       <button class="button" onclick="checkAnswer2('a')">A) www.donsak.ac.th</button>
-       <button class="button" onclick="checkAnswer2('b')">B) www.donsakwit.ac.th</button>
-       <button class="button" onclick="checkAnswer2('c')">C) www.donsak.co.th</button>
-       <button class="button" onclick="checkAnswer2('d')">D) www.donsakwit.co.th</button>
-       <p id="result2"></p>  
-       
-       <h1></h1>
-       <p id="question4">สรุปผลการทดสอบ</p>
-       <button class="button" onclick="doCheck()">คลิกที่นี่</button>
-       <p id="result3"></p>
-   </div>
-
-
-<script src="easy.js" charset="UTF-8"></script>
+    <div>
+        <div class="quiz-container">
+            <h1></h1>
+            <p id="question">1. PIM ย่อมาจากอะไร ?</p>
+            <button class="button" onclick="checkAnswer('a')">A) พีไอเอ็ม</button>
+            <button class="button" onclick="checkAnswer('b')">B) ปิ๋ม</button>
+            <button class="button" onclick="checkAnswer('c')">C) พิม</button>
+            <button class="button" onclick="checkAnswer('d')">D) ภีม</button>
+            <p id="result"></p>
+        </div>
+        <div class="quiz-container">
+            <h1></h1>
+            <p id="question">2. โรงเรียนดอนสักผดุงวิทย์ ก่อตั้งเมื่อปี พ.ศ. ?</p>
+            <button class="button" onclick="checkAnswer2('a')">A) 2515</button>
+            <button class="button" onclick="checkAnswer2('b')">B) 2516</button>
+            <button class="button" onclick="checkAnswer2('c')">C) 2517</button>
+            <button class="button" onclick="checkAnswer2('d')">D) 2518</button>
+            <p id="result2"></p>
+        </div>
+        <p id="result3"></p>
+    </div>
+   
+<script src="script.js"></script>
 </body>
 </html>
